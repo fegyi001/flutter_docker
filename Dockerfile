@@ -5,7 +5,7 @@ RUN apt-get -y update && apt-get -y install curl git unzip xz-utils zip libglu1-
 
 ENV USER developer
 ENV HOME_DIR /home/${USER}
-ENV WORKSPACE_DIR=${HOME_DIR}/code
+ENV WORKSPACE_DIR ${HOME_DIR}/code
 
 # Set up new user
 RUN useradd -ms /bin/bash ${USER}
